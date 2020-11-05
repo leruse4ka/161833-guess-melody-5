@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import artistQuestionProp from "./artist-question-prop";
 
 const ArtistQuestionScreen = (props) => {
-  const {onAnswer, question, renderPlayer} = props;
+  const {onAnswer, question, renderPlayer, children} = props;
   const {
     answers,
     song,
@@ -19,12 +19,7 @@ const ArtistQuestionScreen = (props) => {
         <svg xmlns="http://www.w3.org/2000/svg" className="timer" viewBox="0 0 780 780">
           <circle className="timer__line" cx="390" cy="390" r="370" style={{ilter: `url(#blur)`, transform: `rotate(-90deg) scaleY(-1)`, transformOrigin: `center`}} />
         </svg>
-
-        <div className="game__mistakes">
-          <div className="wrong"></div>
-          <div className="wrong"></div>
-          <div className="wrong"></div>
-        </div>
+        {children}
       </header>
 
       <section className="game__screen">
@@ -61,6 +56,7 @@ ArtistQuestionScreen.propTypes = {
   onAnswer: PropTypes.func.isRequired,
   question: artistQuestionProp,
   renderPlayer: PropTypes.func.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 export default ArtistQuestionScreen;

@@ -9,10 +9,10 @@ export default [
       genre: `rock`,
     }, {
       src: `https://mp3minusovki.com/music/fhvndfjwserjgt/445bfc786a687f3373a7763be5d60c3f/19ad3bd0ea9ccfba26cf7c7d0090912d.mp3`,
-      genre: `blues`,
+      genre: `rock`,
     }, {
       src: `https://mp3minusovki.com/music/fhvndfjwserjgt/445bfc786a687f3373a7763be5d60c3f/c02dc0451b994c08daca9c16234ebc3c.mp3`,
-      genre: `jazz`,
+      genre: `rock`,
     }, {
       src: `https://mp3minusovki.com/music/fhvndfjwserjgt/247bab1c312b2335afe3f5c9b496a3d3/7d52425ca7e4fc3e094be35e838c2f2a.mp3`,
       genre: `rock`,
