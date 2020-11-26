@@ -7,7 +7,7 @@ export const fetchQuestionList = () => (dispatch, _getState, api) => (
 );
 
 export const checkAuth = () => (dispatch, _getState, api) => {
-  api.get(APIRoute.LOGIN)
+  return api.get(APIRoute.LOGIN)
     .then(() => dispatch(requireAuthorization(AuthorizationStatus.AUTH)))
     .catch(() => {});
 };
